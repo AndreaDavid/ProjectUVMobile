@@ -25,6 +25,7 @@
     <ImageView
         android:id="@+id/mask"
         android:layout_height="0dp"
+        android:layout_width="0dp"
         android:layout_marginBottom="566dp"
         android:layout_marginStart="384dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -65,7 +66,8 @@
         app:fabSize="normal"
         app:layout_constraintBottom_toTopOf="@+id/fab2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/ic_info" />
+        app:srcCompat="@drawable/add_alarm" />
+
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab2"
@@ -80,7 +82,8 @@
         app:layout_constraintBottom_toTopOf="@+id/cardInf"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/cardInf"
-        app:srcCompat="@drawable/add_alarm" />
+
+    app:srcCompat="@drawable/ic_info" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
