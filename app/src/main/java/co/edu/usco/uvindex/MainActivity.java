@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         information.clone(this,R.layout.activity_main);
         noti.clone(this,R.layout.activity_notifi);
-        mainLayout=findViewById(R.id.full);
+        mainLayout=findViewById(R.id.main);
         full.clone(mainLayout);
 
         fab=findViewById(R.id.fab);
@@ -47,9 +47,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         if(view.getId()==R.id.fab2){
             TransitionManager.beginDelayedTransition(mainLayout);
-            int visible = fab.getVisibility();
-            fab.setVisibility(View.GONE);
-            fab3.setVisibility(fab3.getVisibility()==View.VISIBLE?View.GONE:View.VISIBLE);
+            //fab3.setVisibility(fab3.getVisibility()==View.VISIBLE?View.GONE:View.VISIBLE);
             if(estado){
                 information.applyTo(mainLayout);
             }
@@ -62,8 +60,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         if (view.getId()==R.id.fab3){
             TransitionManager.beginDelayedTransition(mainLayout);
-            fab.setVisibility(fab.getVisibility()==View.VISIBLE?View.GONE:View.VISIBLE);
-            fab2.setVisibility(fab2.getVisibility()==View.VISIBLE?View.GONE:View.VISIBLE);
+            //fab.setVisibility(fab.getVisibility()==View.VISIBLE?View.GONE:View.VISIBLE);
+            //fab2.setVisibility(fab2.getVisibility()==View.VISIBLE?View.GONE:View.VISIBLE);
             if(estado){
                 noti.applyTo(mainLayout);
             }
