@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">UVIndex</string>
+    <string name="web">www.uscoradiationUV.com</string>
+    <string name="title_inf">Informacion</string>
+    <string name="title_not">Notificacion</string>
+    <string name="title_full">Indice Ultravioleta</string>
 </resources>
